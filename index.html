@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <script src="https://kit.fontawesome.com/c4df0b120e.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Edward</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-img">
+            <img src="portfolio_pic.jpg">
+        </div>
+        <div class="home-content">
+            <h1>Hi I'm <span>Eduard</span></h1>
+            <h3 class="typing-text">I'm <span></span></h3>
+            <p>I am currently a college student and an aspiring <br> photographer and videographer.</p>
+            <a href="#contact" class="btn">Message me</a>
+        </div>
+    </section>
+    <!-- ---------About-------- -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="portfolio_pic.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="paragraph">My full name is Eduardo D. Belda Jr. from the southern <br>
+                        part of Cebu which is in Dalagute but currently <br> living in Basak Pardo Cebu City. 
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('talent')">Talent/Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('address')">Address</p>
+                    </div>
+                    <div class="tab-contents  active-tab" id="hobbies">
+                        <ul>
+                            <li><span>Playing Video Games</span><br><ul>
+                                <li>ML</li>
+                                <li>COC</li>
+                            </ul></li>
+                            <li><span>Sports</span><br><ul>
+                                <li>Basketball</li>
+                                <li>Badminton</li>
+                            </ul></li>
+                            <li><span>Playing Board Games</span><br><ul>
+                                <li>Damath</li>
+                                <li>Sci-Dama</li>
+                            </ul></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="talent">
+                        <ul>
+                            <li><span>Talent</span><br><ul>
+                                <li>Taking pictures</li>
+                                <li>Editing videos</li>
+                            </ul></li>
+                            <li><span>Skills</span><br><ul>
+                                <li>Photography</li>
+                                <li>Videography</li>
+                            </ul></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Elementary</span><br><ul>
+                                <li>Langkas Elementary School</li>
+                            </ul></li>
+                            <li><span>Junior High School</span><br><ul>
+                                <li>Mantalongon National High School</li>
+                            </ul></li>
+                            <li><span>Senior High School</span><br><ul>
+                                <li>Dalaguete National High School</li>
+                            </ul></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="address">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15702.889469579814!2d123.8567336983732!3d10.283939237381555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99c6cc38fde75%3A0xaf008cf87a33975d!2sBasak%20Pardo%2C%20Cebu%20City%2C%206000%20Cebu!5e0!3m2!1sen!2sph!4v1728101701123!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------portfolio----------- -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="portfolio-col1">
+                    <h1 class="sub-title">My Works</h1>
+                    <p class="paragraph">This are my sample works: </p>
+                    <button class="btn" onclick="showPhoto()">Photography</button>
+                    <button class="btn" onclick="showVideo()">Videography</button>
+                </div>
+                <div class="portfolio-col2">
+                    <div class="img_vid">
+                        <div class="photo-vid" id="photo">
+                            <img id="photo01" src="portfolio01.jpg" alt="">
+                            <img id="photo02" src="portfolio02.jpg" alt="">
+                            <img id="photo03" src="portfolio03.jpg" alt="">
+                            <img id="photo04" src="portfolio04.jpg" alt="">
+                            <img id="photo05" src="portfolio05.jpg" alt="">
+                            <img id="photo06" src="portfolio06.jpg" alt="">
+                            <div class="slider-nav">
+                                <a href="#photo01"></a>
+                                <a href="#photo02"></a>
+                                <a href="#photo03"></a>
+                                <a href="#photo04"></a>
+                                <a href="#photo05"></a>
+                                <a href="#photo06"></a>
+                            </div>
+                        </div>
+                        <div class="photo-vid" id="video">
+                            <video id="vid01" controls src="vid01.mp4"></video>
+                            <video id="vid02" controls src="vid02.mp4"></video>
+                            <video id="vid03" controls src="vid03.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------contact------------- -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> epsyche362@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09510832921</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/Psyche1414"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61566055767599"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/squirdoo?igsh=MWU1OWQ0cDNicWZuNw=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="portfolio01.jpg" download class="btn btn2">Download Me</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">© Edward. Made with <i class="fa-solid fa-heart"></i> 2024 All Rights Reserved</div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
